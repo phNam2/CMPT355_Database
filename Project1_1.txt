@@ -1,0 +1,238 @@
+---------------------------------------------------------------------
+
+-- ITIALIZING DOMAINS FOR NEW DATABASE SCHEMA
+
+DROP DOMAIN IF EXISTS nsinstituteName;
+DROP DOMAIN IF EXISTS nsEmail;
+DROP DOMAIN IF EXISTS nsPhoneNumber;
+DROP DOMAIN IF EXISTS nsinstituteStreetName;
+DROP DOMAIN IF EXISTS nsinstituteCity;
+DROP DOMAIN IF EXISTS nsinstitutePostalCode;
+DROP DOMAIN IF EXISTS nsinstituteCountry;
+
+DROP DOMAIN IF EXISTS nstransactionStartDate;
+DROP DOMAIN IF EXISTS nstransactionEndDate;
+DROP DOMAIN IF EXISTS nstransactionType;
+
+DROP DOMAIN IF EXISTS nsownershipStartDate;
+DROP DOMAIN IF EXISTS nsownershipEndDate;
+
+DROP DOMAIN IF EXISTS nsIDAlpha;
+DROP DOMAIN IF EXISTS nsIDNum;
+DROP DOMAIN IF EXISTS nsworkName;
+DROP DOMAIN IF EXISTS nstype;
+DROP DOMAIN IF EXISTS nssubType;
+DROP DOMAIN IF EXISTS nscreator;
+DROP DOMAIN IF EXISTS nscompletionDate;
+DROP DOMAIN IF EXISTS nsacquisitionDate; 
+DROP DOMAIN IF EXISTS nsinsuranceValue;
+DROP DOMAIN IF EXISTS nsworkDescription;
+DROP DOMAIN IF EXISTS nsownership;
+DROP DOMAIN IF EXISTS nsquestion;
+DROP DOMAIN IF EXISTS nsanswer;
+
+DROP DOMAIN IF EXISTS nsmaterial;
+
+DROP DOMAIN IF EXISTS nsworkLoccationStartDateTime;
+DROP DOMAIN IF EXISTS nsworkLoccationEndDateTime;
+
+DROP DOMAIN IF EXISTS nslocationName;
+DROP DOMAIN IF EXISTS nslenght;
+DROP DOMAIN IF EXISTS nsminNumWorks;
+DROP DOMAIN IF EXISTS nsmaxNumWorks;
+DROP DOMAIN IF EXISTS nsavailableDate;
+DROP DOMAIN IF EXISTS nssponsor;
+DROP DOMAIN IF EXISTS nssecurity;
+DROP DOMAIN IF EXISTS nsinsurance;
+DROP DOMAIN IF EXISTS nslocationStreetNum;
+DROP DOMAIN IF EXISTS nslocationStreetName;
+DROP DOMAIN IF EXISTS nslocationCity;
+DROP DOMAIN IF EXISTS nslocationPostalCode;
+DROP DOMAIN IF EXISTS nslocationCountry;
+
+DROP DOMAIN IF EXISTS nsexhibitionName;
+DROP DOMAIN IF EXISTS nsexhibitionStartDate;
+DROP DOMAIN IF EXISTS nsisTraveling;
+DROP DOMAIN IF EXISTS nsexhibitionDescription;
+DROP DOMAIN IF EXISTS nsexhibitionEndDate;
+
+DROP DOMAIN IF EXISTS nsworkInsuranceValueStartDate;
+DROP DOMAIN IF EXISTS nsworkInsuranceValueEndDate;
+
+DROP DOMAIN IF EXISTS nsstate;
+DROP DOMAIN IF EXISTS nsworkStateStartDate;
+DROP DOMAIN IF EXISTS nsworkStateEndDate;
+
+
+
+-- institute table domains
+
+CREATE DOMAIN nsinstituteName as varchar(50);
+CREATE DOMAIN nsEmail as varchar(100);
+CREATE DOMAIN nsPhoneNumber as varchar(20);
+CREATE DOMAIN nsinstituteStreetName as varchar(50);
+CREATE DOMAIN nsinstituteCity as varchar(50);
+CREATE DOMAIN nsinstitutePostalCode as varchar(20);
+CREATE DOMAIN nsinstituteCountry as varchar(50);
+
+
+
+-- works table domains:
+
+CREATE DOMAIN nsIDAlpha as varchar(10);
+CREATE DOMAIN nsIDNum as integer;
+CREATE DOMAIN nsworkName as varchar(200);
+CREATE DOMAIN nstype as varchar(50);
+CREATE DOMAIN nssubType as varchar(50);
+CREATE DOMAIN nscreator as varchar(50);
+CREATE DOMAIN nscompletionDate as date;
+CREATE DOMAIN nsacquisitionDate as date; 
+CREATE DOMAIN nsinsuranceValue as integer;
+CREATE DOMAIN nsworkDescription as text;
+CREATE DOMAIN nsownership as varchar(50);
+CREATE DOMAIN nsquestion as varchar(100);
+CREATE DOMAIN nsanswer as varchar(50);
+
+
+
+-- locations table domains:
+
+CREATE DOMAIN nslocationName as varchar(58);
+CREATE DOMAIN nslenght as real;
+CREATE DOMAIN nsminNumWorks smallint;
+CREATE DOMAIN nsmaxNumWorks smallint;
+CREATE DOMAIN nsavailableDate as date;
+CREATE DOMAIN nssponsor as varchar(50);
+CREATE DOMAIN nssecurity as varchar(50);
+CREATE DOMAIN nsinsurance as integer;
+CREATE DOMAIN nslocationStreetNum as smallint;
+CREATE DOMAIN nslocationStreetName as varchar(50);
+CREATE DOMAIN nslocationCity as varchar(50);
+CREATE DOMAIN nslocationPostalCode as varchar(20);
+CREATE DOMAIN nslocationCountry as varchar(50);
+
+
+
+
+
+-- exhibitions table domains:
+
+CREATE DOMAIN nsexhibitionName as varchar(100);
+CREATE DOMAIN nsexhibitionStartDate as date;
+CREATE DOMAIN nsisTraveling as boolean;
+CREATE DOMAIN nsexhibitionDescription as text;
+CREATE DOMAIN nsexhibitionEndDate as date;
+
+
+
+
+
+
+
+-- transaction table domains
+
+CREATE DOMAIN nstransactionStartDate as date;
+CREATE DOMAIN nstransactionEndDate as date;
+CREATE DOMAIN nstransactionType as varchar(20);
+
+
+
+
+
+
+-- worksOwnership table domains
+
+CREATE DOMAIN nsownershipStartDate as date;
+CREATE DOMAIN nsownershipEndDate as date;
+
+
+
+
+-- worksLocations table domains:
+
+CREATE DOMAIN nsworkLoccationStartDateTime as timestamp;
+CREATE DOMAIN nsworkLoccationEndDateTime as timestamp;
+
+
+
+
+
+-- worksInsuranceValue table domains:
+
+CREATE DOMAIN nsworkInsuranceValueStartDate as date;
+CREATE DOMAIN nsworkInsuranceValueEndDate as date;
+
+
+
+
+
+-- worksState domains:
+
+CREATE DOMAIN nsstate as varchar(30);
+CREATE DOMAIN nsworkStateStartDate as date;
+CREATE DOMAIN nsworkStateEndDate as date;
+
+
+
+
+
+-- media table domains:
+
+CREATE DOMAIN nsmaterial as varchar(100);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

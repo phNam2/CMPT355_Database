@@ -1,0 +1,14 @@
+
+DROP TABLE nsdoors CASCADE;
+DROP TABLE nsmedia CASCADE;
+DROP TABLE nsworksState CASCADE;
+DROP TABLE nsworksInsuranceValue CASCADE;
+DROP TABLE nsexhibitionsLocations CASCADE;
+DROP TABLE nsexhibitionsWorks CASCADE;
+DROP TABLE nsworksLocations CASCADE;
+DROP TABLE nsworksOwnership CASCADE;
+DROP TABLE nsTransaction CASCADE;
+DROP TABLE nsexhibitions CASCADE;
+DROP TABLE nslocations CASCADE;
+DROP TABLE nsWorks CASCADE;
+DROP TABLE nsInstitutions CASCADE;
